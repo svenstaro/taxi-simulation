@@ -212,6 +212,6 @@ impl fmt::Display for World {
 }
 
 fn main() {
-    let mut world = World::new(10000, 0.1, 200, 5);
+    let mut world = World::new(86400, 0.2, 2000, 200);
     world.run_till_done();
 }
