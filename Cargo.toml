@@ -1,0 +1,14 @@
+[package]
+authors = ["Sven-Hendrik Haase <svenstaro@gmail.com>"]
+edition = "2018"
+name = "taxi-simulation"
+version = "0.1.0"
+
+[dependencies]
+uuid = { version = "0.7", features = ["v4"] }
+rand = { version = "0.7", features = ["small_rng"] }
+
+[profile.release]
+lto = true
+codegen-units = 1
+opt-level = 3
